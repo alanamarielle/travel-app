@@ -8,12 +8,15 @@ export class TravelService {
   weatherUrl: string = 'https://api.openweathermap.org/data/2.5/weather';
   weatherAppId = weather_APP_ID;
   weatherUnits: string = 'imperial';
-
+  // cityID: string = '4990729';
   constructor(private http: HttpClient) {}
 
-  getWeather = (lat: number, lon: number): any => {
-    return this.http.get(
-      `${this.weatherUrl}${lat}${lon}${this.weatherAppId}${this.weatherUnits}`
-    );
-  };
+  // getWeather = (cityID: string): any => {
+  //   return this.http.get(this.weatherUrl, {
+  //     params: {
+  //       appid: this.weatherAppId,
+  //       id: cityID,
+  //     },
+  //   });
+  // };
 }
