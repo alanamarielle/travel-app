@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TravelService } from '../travel.service';
 
@@ -8,13 +8,16 @@ import { TravelService } from '../travel.service';
   styleUrls: ['./weather.component.css'],
 })
 export class WeatherComponent implements OnInit {
-  @Output() foundCity;
+  @Input() cityIDRef: number;
   weatherData: any;
 
   constructor(private service: TravelService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.service.getWeather(this.foundCity);
-    console.log(this.foundCity);
+    this.service.getWeather(this.cityIDRef).subscribe((response) => {
+      this.weatherData = response;
+      console.log(this.weatherData);
+    });
+    console.log(this.cityIDRef);
   }
 }

@@ -11,11 +11,11 @@ export class TravelService {
 
   constructor(private http: HttpClient) {}
 
-  getWeather = (cityID: string): any => {
+  getWeather = (cityID: number): any => {
     return this.http.get(this.weatherUrl, {
       params: {
         appid: this.weatherAppId,
-        id: cityID,
+        id: `${cityID}`,
       },
     });
   };

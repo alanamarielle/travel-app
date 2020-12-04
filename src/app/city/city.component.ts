@@ -7,7 +7,6 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./city.component.css'],
 })
 export class CityComponent implements OnInit {
-  @Input() foundCity: number;
   cityArray = [
     {
       city: 'Detroit',
