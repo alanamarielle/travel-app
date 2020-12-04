@@ -9,11 +9,9 @@ import { TravelService } from '../travel.service';
   styleUrls: ['./weather.component.css'],
 })
 export class WeatherComponent implements OnInit {
+  weatherData: any;
+
   constructor(private service: TravelService, private route: ActivatedRoute) {}
 
-  ngOnInit(): void {
-    console.log("hello");
-    console.log(this.service.getWeather(42.3, 83.0));
-  }
-
+  ngOnInit(): void {}
 }
