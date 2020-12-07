@@ -1,1 +1,7 @@
-<p>weather works!</p>
+<div class="weather">
+  <p>
+    Welcome to {{ weatherData?.name }}! The current temperature is
+    {{ weatherData?.main.temp }} degrees fahrenheit with
+    {{ weatherData?.weather[0].description }}.
+  </p>
+</div>

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { GalleriaModule } from 'primeng/galleria';
 import { AppComponent } from './app.component';
 import { CityComponent } from './city/city.component';
 import { HomeComponent } from './home/home.component';
@@ -24,7 +25,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     RecipesComponent,
     PageNotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, GalleriaModule],
   providers: [],
   bootstrap: [AppComponent],
 })
