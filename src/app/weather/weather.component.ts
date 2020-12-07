@@ -16,8 +16,6 @@ export class WeatherComponent implements OnInit {
   ngOnInit(): void {
     this.service.getWeather(this.cityIDRef).subscribe((response) => {
       this.weatherData = response;
-      console.log(this.weatherData);
     });
-    console.log(this.cityIDRef);
   }
 }

@@ -1,0 +1,9 @@
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: cornflowerblue;
+  font-size: 25px;
+  color: white;
+}
