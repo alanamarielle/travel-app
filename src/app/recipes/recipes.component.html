@@ -1,1 +1,6 @@
-<p>recipes works!</p>
+<div class="recipes">
+  <div class="recipe-container" *ngFor="let cityRecipe of recipeData?.hits">
+    <p>{{ cityRecipe?.recipe.label }}</p>
+    <img src="{{ cityRecipe?.recipe.image }}" alt="" />
+  </div>
+</div>
