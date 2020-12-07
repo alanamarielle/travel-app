@@ -1,5 +1,9 @@
 .recipes {
   display: flex;
-  height: 300px;
+  height: 400px;
   background-color: tomato;
+}
+.recipe-container {
+  padding: 20px;
+  margin: 20px;
 }
