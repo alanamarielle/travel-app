@@ -1,4 +1,9 @@
 .books {
-  height: 300px;
+  display: flex;
+  height: 400px;
   background-color: wheat;
+}
+.books-item {
+  padding: 20px;
+  margin: 20px;
 }
