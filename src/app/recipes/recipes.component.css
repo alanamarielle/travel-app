@@ -1,0 +1,5 @@
+.recipes {
+  display: flex;
+  height: 300px;
+  background-color: tomato;
+}

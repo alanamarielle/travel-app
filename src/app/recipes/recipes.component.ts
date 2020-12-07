@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { TravelService } from '../travel.service';
 
 @Component({
   selector: 'app-recipes',
   templateUrl: './recipes.component.html',
-  styleUrls: ['./recipes.component.css']
+  styleUrls: ['./recipes.component.css'],
 })
 export class RecipesComponent implements OnInit {
-
-  constructor() { }
+  @Input() cityRecipe: string;
+  recipeData: any;
+  constructor(private service: TravelService) {}
 
   ngOnInit(): void {
+    this.service.getRecipes(this.cityRecipe).subscribe((response) => {
+      this.recipeData = response;
+    });
   }
-
 }
