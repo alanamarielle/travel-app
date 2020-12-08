@@ -53,7 +53,8 @@ export class TravelService {
       params: {
         key: this.booksKey,
         q: `subject:${cityName}`,
-        orderBy: 'newest',
+        orderBy: 'relevance',
+        langRestrict: 'en',
       },
     });
   };
