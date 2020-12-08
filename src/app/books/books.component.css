@@ -1,9 +1,22 @@
 .books {
   display: flex;
-  height: 400px;
+  flex-wrap: wrap;
+  height: max-content;
   background-color: wheat;
+  width: 100vw;
 }
 .books-item {
-  padding: 20px;
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  max-width: 30%;
+}
+
+.book-info {
+  font-size: 14px;
+  text-align: center;
+  height: 32px;
+  width: 150px;
 }
