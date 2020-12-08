@@ -15,6 +15,7 @@ export class PhotosComponent implements OnInit {
   ngOnInit(): void {
     this.service.getPhotos(this.cityRef).subscribe((response) => {
       this.photoData = response;
+      console.log(this.photoData);
     });
   }
 }

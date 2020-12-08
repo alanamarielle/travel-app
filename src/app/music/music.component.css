@@ -1,0 +1,13 @@
+.musicPlayer {
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: black;
+}

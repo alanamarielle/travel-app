@@ -51,7 +51,7 @@ export class TravelService {
   getBooks = (cityName: string): any => {
     return this.http.get(this.booksUrl, {
       params: {
-        key: books_key,
+        key: this.booksKey,
         q: `subject:${cityName}`,
         orderBy: 'newest',
       },
