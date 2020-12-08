@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -11,57 +11,58 @@ export class CityComponent implements OnInit {
     {
       city: 'Detroit',
       cityID: 4990729,
-      pixID: 123,
+      books: 'detroit',
     },
     {
       city: 'Rome',
       cityID: 3169070,
-      pixID: 123,
+      books: 'rome',
     },
     {
       city: 'Rio de Janeiro',
       cityID: 3451189,
-      pixID: 123,
+      books: 'brazil',
     },
     {
       city: 'Paris',
       cityID: 6455259,
-      pixID: 123,
+      books: 'paris',
     },
     {
       city: 'New York City',
       cityID: 5128581,
-      pixID: 123,
+      books: 'new_york_city',
     },
     {
       city: 'Bangkok',
       cityID: 1609348,
-      pixID: 123,
+      books: 'bangkok',
     },
     {
       city: 'Tokyo',
       cityID: 1850147,
-      pixID: 123,
+      books: 'tokyo',
     },
     {
       city: 'New Delhi',
       cityID: 1261481,
-      pixID: 123,
+      books: 'newdelhi',
     },
     {
       city: 'Madrid',
       cityID: 3117735,
-      pixID: 123,
+      books: 'madrid',
     },
     {
       city: 'Addis Ababa',
       cityID: 344979,
-      pixID: 123,
+      books: 'ethiopia',
     },
   ];
 
   city: string | null = null;
   cityID: number | null = null;
+  books: string | null = null;
 
   constructor(private route: ActivatedRoute) {}
 
@@ -79,5 +80,6 @@ export class CityComponent implements OnInit {
       return item.city === city;
     });
     this.cityID = foundCity.cityID;
+    this.books = foundCity.books;
   };
 }
