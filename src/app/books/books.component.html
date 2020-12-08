@@ -1,8 +1,8 @@
 <div class="books">
   <div class="books-item" *ngFor="let cityBook of bookData?.items">
-    <p>
-      {{ cityBook?.volumeInfo.title }} by {{ cityBook?.volumeInfo.authors }}
-    </p>
-    <img src="{{ cityBook?.volumeInfo.imageLinks.thumbnail }}" alt="" />
+    <img src="{{ cityBook?.volumeInfo.imageLinks.thumbnail }}" alt="" />    
+    <p class="book-info">
+      {{ cityBook?.volumeInfo.title }} <br> by {{ cityBook?.volumeInfo.authors }}
+    </p>  
   </div>
 </div>

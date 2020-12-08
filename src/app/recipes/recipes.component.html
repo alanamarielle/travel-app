@@ -1,6 +1,6 @@
 <div class="recipes">
   <div class="recipe-container" *ngFor="let cityRecipe of recipeData?.hits">
-    <p>{{ cityRecipe?.recipe.label }}</p>
-    <img src="{{ cityRecipe?.recipe.image }}" alt="" />
+    <p class="recipe-info">{{ cityRecipe?.recipe.label }}</p>
+    <img src="{{ cityRecipe?.recipe.image }}" alt="recipe img" />
   </div>
 </div>
