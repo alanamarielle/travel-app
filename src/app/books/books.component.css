@@ -1,9 +1,11 @@
 .books {
   display: flex;
   flex-wrap: wrap;
-  height: max-content;
+  /* height: max-content; */
   background-color: wheat;
   width: 100vw;
+  height: 400px;
+  margin-bottom: 80px;
 }
 .books-item {
   display: flex;

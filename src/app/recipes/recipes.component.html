@@ -2,5 +2,8 @@
   <div class="recipe-container" *ngFor="let cityRecipe of recipeData?.hits">
     <p class="recipe-info">{{ cityRecipe?.recipe.label }}</p>
     <img src="{{ cityRecipe?.recipe.image }}" alt="recipe img" />
+    <a href="{{ cityRecipe?.recipe.url }}" target="_blank"
+      >Click to view recipe.<i class="fas fa-utensils"></i>
+    </a>
   </div>
 </div>
