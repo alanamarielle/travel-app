@@ -1,9 +1,14 @@
-.weather {
+.welcome {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
-  background-color: cornflowerblue;
+}
+.weather {
+  height: max-content;
+  background-color: rgb(149, 177, 229);
   font-size: 25px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
