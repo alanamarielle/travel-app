@@ -2,13 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  z-index: 1;
+  color: white;
 }
 .weather {
-  height: max-content;
-  background-color: rgb(149, 177, 229);
+  height: 75px;
+  background-color: black;
   font-size: 25px;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0px;
+  left: 5px;
+  z-index: 1;
 }
