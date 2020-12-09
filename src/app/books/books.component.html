@@ -1,11 +1,18 @@
 <div class="books">
   <div class="books-item" *ngFor="let cityBook of bookData?.items; index as i">
     <img src="{{ cityBook?.volumeInfo.imageLinks.thumbnail }}" alt="" />
-    <p *ngIf="showIndex === i" class="book-info">
-      {{ cityBook?.volumeInfo.title }} <br />
+    <div *ngIf="showIndex === i" class="book-info">
+      <p class="title">{{ cityBook?.volumeInfo.title }}</p>
       by {{ cityBook?.volumeInfo.authors }} <br />
-      {{ cityBook?.volumeInfo.description }}
-    </p>
-    <button (click)="toggleDisplay(i)">Show Info</button>
+      Description: {{ cityBook?.volumeInfo.description }}
+      <button class="bk-button" (click)="toggleDisplay(i)">Hide Info</button>
+    </div>
+    <button
+      class="bk-button"
+      *ngIf="showIndex !== i"
+      (click)="toggleDisplay(i)"
+    >
+      Show Info
+    </button>
   </div>
 </div>
