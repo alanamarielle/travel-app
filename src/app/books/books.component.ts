@@ -18,6 +18,13 @@ export class BooksComponent implements OnInit {
       console.log(this.bookData);
     });
   }
+  loadMore = () => {
+    this.service.getBooks(this.cityBook, '10').subscribe((response) => {
+      this.bookData = response;
+      console.log(this.bookData);
+    });
+  };
+
   toggleDisplay(index: number) {
     if (this.showIndex === index) {
       this.showIndex = null;

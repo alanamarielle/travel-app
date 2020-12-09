@@ -48,13 +48,14 @@ export class TravelService {
       },
     });
   };
-  getBooks = (cityName: string): any => {
+  getBooks = (cityName: string, startIndex: string = '0'): any => {
     return this.http.get(this.booksUrl, {
       params: {
         key: this.booksKey,
         q: `subject:${cityName}`,
         orderBy: 'relevance',
         langRestrict: 'en',
+        startIndex: startIndex,
       },
     });
   };

@@ -12,58 +12,68 @@ export class CityComponent implements OnInit {
       city: 'Detroit',
       cityID: 4990729,
       books: 'detroit',
+      recipe: 'detroit',
     },
     {
       city: 'Rome',
       cityID: 3169070,
       books: 'rome',
+      recipe: 'italian',
     },
     {
       city: 'Rio de Janeiro',
       cityID: 3451189,
       books: 'brazil',
+      recipe: 'brazilian',
     },
     {
       city: 'Paris',
       cityID: 6455259,
       books: 'paris',
+      recipe: 'french',
     },
     {
       city: 'New York City',
       cityID: 5128581,
       books: 'new_york_city',
+      recipe: 'new_york',
     },
     {
       city: 'Bangkok',
       cityID: 1609348,
       books: 'bangkok',
+      recipe: 'thai',
     },
     {
       city: 'Tokyo',
       cityID: 1850147,
       books: 'tokyo',
+      recipe: 'japanese',
     },
     {
       city: 'New Delhi',
       cityID: 1261481,
       books: 'newdelhi',
+      recipe: 'indian',
     },
     {
       city: 'Madrid',
       cityID: 3117735,
       books: 'madrid',
+      recipe: 'spanish',
     },
     {
       city: 'Addis Ababa',
       cityID: 344979,
       books: 'ethiopia',
+      recipe: 'ethiopian',
     },
   ];
 
   city: string | null = null;
   cityID: number | null = null;
   books: string | null = null;
-
+  recipe: string | null = null;
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
@@ -81,5 +91,6 @@ export class CityComponent implements OnInit {
     });
     this.cityID = foundCity.cityID;
     this.books = foundCity.books;
+    this.recipe = foundCity.recipe;
   };
 }
