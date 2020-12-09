@@ -1,14 +1,15 @@
 <p-galleria
   [value]="photoData?.hits"
   [responsiveOptions]="responsiveOptions"
-  [numVisible]="5"
+  [numVisible]="10"
   [showItemNavigators]="true"
+  [containerStyle]="{ 'background-color': 'black' }"
 >
-  <ng-template pTemplate="header">
-    <h1>Header</h1>
-  </ng-template>
   <ng-template pTemplate="item" let-item>
-    <img [src]="item.webformatURL" style="width: 100%; display: block" />
+    <img
+      [src]="item.largeImageURL"
+      style="width: 100%; height: 100vh; display: block"
+    />
   </ng-template>
   <ng-template pTemplate="thumbnail" let-item>
     <div class="p-grid p-nogutter p-justify-center">
@@ -16,6 +17,7 @@
     </div>
   </ng-template>
 </p-galleria>
+
 <!-- <p-galleria
   [value]="photoData?.hits"
   [responsiveOptions]="responsiveOptions"
