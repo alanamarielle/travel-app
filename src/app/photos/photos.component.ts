@@ -10,6 +10,20 @@ export class PhotosComponent implements OnInit {
   @Input() cityRef: string;
   photoData: any;
   randomNumber: number = Math.floor(Math.random() * 21);
+  responsiveOptions: any[] = [
+    {
+      breakpoint: '1024px',
+      numVisible: 5,
+    },
+    {
+      breakpoint: '768px',
+      numVisible: 3,
+    },
+    {
+      breakpoint: '560px',
+      numVisible: 1,
+    },
+  ];
   constructor(private service: TravelService) {}
 
   ngOnInit(): void {

@@ -23,8 +23,19 @@
   background-color: white;
   font-size: 14px;
   text-align: center;
-  /* height: 32px; */
+  overflow: auto;
   width: 150px;
+  height: 200px;
   position: absolute;
   top: 0;
+  z-index: 10;
+}
+.title {
+  font-size: 16px;
+}
+.bk-button {
+  border: none;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 15px;
 }
