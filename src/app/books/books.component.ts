@@ -9,6 +9,7 @@ import { TravelService } from '../travel.service';
 export class BooksComponent implements OnInit {
   @Input() cityBook: string;
   bookData: any;
+  showIndex: number | null = null;
   constructor(private service: TravelService) {}
 
   ngOnInit(): void {
@@ -16,5 +17,12 @@ export class BooksComponent implements OnInit {
       this.bookData = response;
       console.log(this.bookData);
     });
+  }
+  toggleDisplay(index: number) {
+    if (this.showIndex === index) {
+      this.showIndex = null;
+    } else {
+      this.showIndex = index;
+    }
   }
 }

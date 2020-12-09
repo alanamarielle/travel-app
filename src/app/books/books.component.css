@@ -4,7 +4,7 @@
   /* height: max-content; */
   background-color: wheat;
   width: 100vw;
-  height: 400px;
+  /* height: 400px; */
   margin-bottom: 80px;
 }
 .books-item {
@@ -14,11 +14,17 @@
   padding: 10px;
   margin: 10px;
   max-width: 30%;
+  position: relative;
 }
 
 .book-info {
+  border-radius: 15px;
+  padding: 8px;
+  background-color: white;
   font-size: 14px;
   text-align: center;
-  height: 32px;
+  /* height: 32px; */
   width: 150px;
+  position: absolute;
+  top: 0;
 }
