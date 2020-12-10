@@ -1,4 +1,4 @@
-<div class="recipes">
+<div class="recipe-box"> <div class="recipes"> 
   <div class="recipe-container" *ngFor="let cityRecipe of recipeData?.hits">
     <p class="recipe-info">{{ cityRecipe?.recipe.label }}</p>
     <img src="{{ cityRecipe?.recipe.image }}" alt="recipe img" />
@@ -6,4 +6,7 @@
       >Click to view recipe.<i class="fas fa-utensils"></i>
     </a>
   </div>
-</div>
+</div> 
+
+ 
+<button class="load-more" (click)="loadMore()">Load more recipes</button> </div>

@@ -53,8 +53,8 @@ export class CityComponent implements OnInit {
     {
       city: 'New Delhi',
       cityID: 1261481,
-      books: 'newdelhi',
-      recipe: 'indian',
+      books: 'delhi',
+      recipe: 'delhi',
     },
     {
       city: 'Madrid',
