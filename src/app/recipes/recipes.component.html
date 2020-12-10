@@ -1,12 +1,18 @@
-<div class="recipe-box"> <div class="recipes"> 
-  <div class="recipe-container" *ngFor="let cityRecipe of recipeData?.hits">
-    <p class="recipe-info">{{ cityRecipe?.recipe.label }}</p>
-    <img src="{{ cityRecipe?.recipe.image }}" alt="recipe img" />
-    <a href="{{ cityRecipe?.recipe.url }}" target="_blank"
-      >Click to view recipe.<i class="fas fa-utensils"></i>
-    </a>
+<div class="recipe-box">
+  <h1>Let your taste buds explore...</h1>
+  <div class="recipes">
+    <div class="recipe-container" *ngFor="let cityRecipe of recipeData?.hits">
+      <p class="recipe-info">{{ cityRecipe?.recipe.label }}</p>
+      <img
+        src="{{ cityRecipe?.recipe.image }}"
+        alt="recipe img"
+        class="recipeImg"
+      />
+      <a href="{{ cityRecipe?.recipe.url }}" target="_blank"
+        >Click to view recipe.<i class="fas fa-utensils"></i>
+      </a>
+    </div>
   </div>
-</div> 
 
- 
-<button class="load-more" (click)="loadMore()">Load more recipes</button> </div>
+  <button class="load-more" (click)="loadMore()">Load more recipes</button>
+</div>

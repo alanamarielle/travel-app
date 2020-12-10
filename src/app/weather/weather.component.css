@@ -9,6 +9,7 @@
   color: white;
 }
 .weather {
+  padding-top: 10px;
   height: 40px;
   background-color: black;
   font-size: 16px;
