@@ -1,23 +1,28 @@
 <div class="books-box">
-<div class="books">
-  <div class="books-item" *ngFor="let cityBook of bookData?.items; index as i">
-    <img src="{{ cityBook?.volumeInfo.imageLinks.thumbnail }}" alt="" />
-    <div *ngIf="showIndex === i" class="book-info">
-      <p class="title">{{ cityBook?.volumeInfo.title }}</p>
-      by {{ cityBook?.volumeInfo.authors }} <br />
-      Description: {{ cityBook?.volumeInfo.description }}
-      <button class="bk-button" (click)="toggleDisplay(i)">Hide Info</button>
-    </div>
-    <button
-      class="bk-button"
-      *ngIf="showIndex !== i"
-      (click)="toggleDisplay(i)"
-    >
-      Show Info
-    </button>
-  </div>
- 
-</div>
- <button class="load-more" (click)="loadMore()">Load More</button>
+  <div class="books">
+    <div
+      class="books-item"
+      *ngFor="let cityBook of bookData?.items; index as i"
+    >      <button
+    class="bk-button"
+    *ngIf="showIndex !== i"
+    (click)="toggleDisplay(i)"
+  >
+    Show Info
+  </button>
+      <img src="{{ cityBook?.volumeInfo.imageLinks.thumbnail }}" alt="" class="bookImg" />
+      <div *ngIf="showIndex === i" class="book-info">
+        <p class="title">{{ cityBook?.volumeInfo.title }}</p>
+        by {{ cityBook?.volumeInfo.authors }} <br />
+        Description: {{ cityBook?.volumeInfo.description }}
+        <button class="bk-button" (click)="toggleDisplay(i)">Hide Info</button>
+      </div>
 
+      
+    </div>
+    <div class="bookshelf"></div>
+  </div>
+  <button class="load-more" (click)="loadMore()">Load More</button>
 </div>
+
+

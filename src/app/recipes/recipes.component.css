@@ -6,12 +6,11 @@
   flex-direction: column;
   align-items: center;
   background-color: #fdfffc;
-  background-image: url("src/app/imageAssets/Indian.jpg");
-  background-repeat: repeat;
+  background-image: url("src/app/imageAssets/brick5.jpeg");
 }
 
 .recipes {
-  background-color: #b61a1a;
+  background-color: #031d44;
   width: 90vw;
   display: flex;
   flex-wrap: wrap;
