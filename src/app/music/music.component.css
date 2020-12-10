@@ -1,13 +1,32 @@
 .musicPlayer {
   position: fixed;
   bottom: 0;
-  right: 5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .footer {
+  display: flex;
+  align-items: center;
   position: fixed;
   bottom: 0;
   width: 100vw;
   height: 80px;
   background-color: black;
+}
+
+.homeButton {
+  display: flex;
+  margin-left: 15px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  right: 5px;
+}
+
+.fas {
+  font-size: 30px;
+  margin-right: 5px;
 }

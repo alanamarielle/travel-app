@@ -1,22 +1,24 @@
-<p-galleria
-  [value]="photoData?.hits"
-  [responsiveOptions]="responsiveOptions"
-  [numVisible]="10"
-  [showItemNavigators]="true"
-  [containerStyle]="{ 'background-color': 'black' }"
->
-  <ng-template pTemplate="item" let-item>
-    <img
-      [src]="item.largeImageURL"
-      style="width: 100%; height: 100vh; display: block"
-    />
-  </ng-template>
-  <ng-template pTemplate="thumbnail" let-item>
-    <div class="p-grid p-nogutter p-justify-center">
-      <img [src]="item.previewURL" style="display: block" />
-    </div>
-  </ng-template>
-</p-galleria>
+<div class="photos">
+  <p-galleria
+    [value]="photoData?.hits"
+    [responsiveOptions]="responsiveOptions"
+    [numVisible]="5"
+    [showItemNavigators]="true"
+    [containerStyle]="{ 'background-color': 'black' }"
+  >
+    <ng-template pTemplate="item" let-item>
+      <img
+        [src]="item.largeImageURL"
+        style="width: 90vw; height: 90vh; display: block"
+      />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+      <div class="p-grid p-nogutter p-justify-center">
+        <img [src]="item.previewURL" style="display: block" />
+      </div>
+    </ng-template>
+  </p-galleria>
+</div>
 
 <!-- <p-galleria
   [value]="photoData?.hits"
