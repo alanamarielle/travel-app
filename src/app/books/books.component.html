@@ -1,3 +1,4 @@
+<div class="books-box">
 <div class="books">
   <div class="books-item" *ngFor="let cityBook of bookData?.items; index as i">
     <img src="{{ cityBook?.volumeInfo.imageLinks.thumbnail }}" alt="" />
@@ -15,5 +16,8 @@
       Show Info
     </button>
   </div>
-  <button (click)="loadMore()">Load More</button>
+ 
+</div>
+ <button class="load-more" (click)="loadMore()">Load More</button>
+
 </div>

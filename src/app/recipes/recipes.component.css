@@ -1,10 +1,16 @@
+.recipe-box {
+  background-color: tomato;
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .recipes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: max-content;
-  background-color: tomato;
-  width: 100vw;
 }
 .recipe-container {
   display: flex;
@@ -31,4 +37,9 @@ a:visited {
 
 .fas {
   color: black;
+}
+
+.load-more {
+  border: none;
+  background-color: transparent;
 }

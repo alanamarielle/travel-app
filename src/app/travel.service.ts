@@ -39,12 +39,13 @@ export class TravelService {
       },
     });
   };
-  getRecipes = (cityName: string): any => {
+  getRecipes = (cityName: string, from: string = '0'): any => {
     return this.http.get(this.edamamBaseUrl, {
       params: {
         app_key: edamam_API_KEY,
         app_id: edamam_APP_ID,
         q: `${cityName}`,
+        from: from,
       },
     });
   };

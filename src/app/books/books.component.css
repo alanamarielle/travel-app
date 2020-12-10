@@ -1,11 +1,20 @@
+.books-box {
+  background-color: wheat;
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
 .books {
   display: flex;
   flex-wrap: wrap;
   /* height: max-content; */
-  background-color: wheat;
-  width: 100vw;
+  /* background-color: wheat;
+  width: 100vw; */
   /* height: 400px; */
-  margin-bottom: 80px;
 }
 .books-item {
   display: flex;
@@ -38,4 +47,11 @@
   padding: 10px;
   margin: 3px;
   border-radius: 15px;
+}
+
+.load-more {
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 15px;
 }

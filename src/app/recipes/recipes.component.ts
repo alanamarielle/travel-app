@@ -17,4 +17,12 @@ export class RecipesComponent implements OnInit {
       console.log(this.recipeData);
     });
   }
+
+  loadMore = () => {
+    this.service.getRecipes(this.cityRecipe, '10').subscribe((response) => {
+      this.recipeData = response;
+      console.log(this.recipeData);
+    });
+  };
+
 }
