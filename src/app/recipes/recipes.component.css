@@ -4,19 +4,90 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.recipe-box-Detroit {
   background-image: url("src/app/imageAssets/brick5.jpeg");
 }
+
+.recipe-box-Rome {
+  background-image: url("src/app/imageAssets/brick3.jpg");
+}
+
+.recipe-box-RiodeJaneiro {
+  background-image: url("src/app/imageAssets/brazil-fabric.jpg");
+}
+
+.recipe-box-Paris {
+  background-image: url("src/app/imageAssets/frenchfabric.jpg");
+}
+
+.recipe-box-NewYorkCity {
+  background-image: url("src/app/imageAssets/newyorkfabric.jpg");
+}
+
+.recipe-box-Bangkok {
+  background-image: url("src/app/imageAssets/brick5.jpeg");
+}
+
+.recipe-box-Tokyo {
+  background-image: url("src/app/imageAssets/tokyo-bkg.jpg");
+}
+
+.recipe-box-NewDelhi {
+  background-image: url("src/app/imageAssets/Indian.jpg");
+}
+
+.recipe-box-Madrid {
+  background-image: url("src/app/imageAssets/Madrid-fabric.jpg");
+}
+
+.recipe-box-AddisAbaba {
+  background-image: url("src/app/imageAssets/ethiopianfabric.jpg");
+}
+
 .recipeheader {
   color: #fdfffc;
 }
 .recipes {
-  background-color: #031d44;
   width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-shadow: 0px 0px 10px black;
 }
+
+.recipes-Detroit {
+  background-color: #031d44;
+}
+.recipes-Rome {
+  background-color: green;
+}
+.recipes-RiodeJaneiro {
+  background-color: blue;
+}
+.recipes-Paris {
+  background-color: pink;
+}
+.recipes-NewYorkCity {
+  background-color: red;
+}
+.recipes-Bangkok {
+  background-color: yellow;
+}
+.recipes-Tokyo {
+  background-color: orange;
+}
+.recipes-NewDelhi {
+  background-color: #31e2d9;
+}
+.recipes-Madrid {
+  background-color: #35d169;
+}
+.recipes-AddisAbaba {
+  background-color: #e21aa6;
+}
+
 .recipe-container {
   display: flex;
   flex-direction: column;

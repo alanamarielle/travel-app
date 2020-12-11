@@ -1,7 +1,32 @@
-<div class="recipe-box">
+<div
+  class="recipe-box"
+  [class.recipe-box-Detroit]="cityName === 'Detroit'"
+  [class.recipe-box-Rome]="cityName === 'Rome'"
+  [class.recipe-box-RiodeJaneiro]="cityName === 'Rio de Janeiro'"
+  [class.recipe-box-Paris]="cityName === 'Paris'"
+  [class.recipe-box-NewYorkCity]="cityName === 'New York City'"
+  [class.recipe-box-Bangkok]="cityName === 'Bangkok'"
+  [class.recipe-box-Tokyo]="cityName === 'Tokyo'"
+  [class.recipe-box-NewDelhi]="cityName === 'New Delhi'"
+  [class.recipe-box-Madrid]="cityName === 'Madrid'"
+  [class.recipe-box-AddisAbaba]="cityName === 'Addis Ababa'"
+>
   <h1 class="recipeheader">Let your taste buds explore...</h1>
-  <div class="recipes">
-    <div class="recipe-container" *ngFor="let cityRecipe of recipeData?.hits">
+  <div
+  class="recipes"
+  [class.recipes-Detroit]="cityName === 'Detroit'"
+  [class.recipes-Rome]="cityName === 'Rome'"
+  [class.recipes-RiodeJaneiro]="cityName === 'Rio de Janeiro'"
+  [class.recipes-Paris]="cityName === 'Paris'"
+  [class.recipes-NewYorkCity]="cityName === 'New York City'"
+  [class.recipes-Bangkok]="cityName === 'Bangkok'"
+  [class.recipes-Tokyo]="cityName === 'Tokyo'"
+  [class.recipes-NewDelhi]="cityName === 'New Delhi'"
+  [class.recipes-Madrid]="cityName === 'Madrid'"
+  [class.recipes-AddisAbaba]="cityName === 'Addis Ababa'"
+>
+
+  <div class="recipe-container" *ngFor="let cityRecipe of recipeData?.hits">
       <p class="recipe-info">{{ cityRecipe?.recipe.label }}</p>
       <img
         src="{{ cityRecipe?.recipe.image }}"
