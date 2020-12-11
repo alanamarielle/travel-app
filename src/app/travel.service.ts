@@ -53,7 +53,7 @@ export class TravelService {
     return this.http.get(this.booksUrl, {
       params: {
         key: this.booksKey,
-        q: `subject:${cityName}`,
+        q: `${cityName}`,
         orderBy: 'relevance',
         langRestrict: 'en',
         startIndex: startIndex,
