@@ -36,12 +36,12 @@ export class CityComponent implements OnInit {
       city: 'New York City',
       cityID: 5128581,
       books: 'new_york_city',
-      recipe: 'new_york',
+      recipe: 'nyc',
     },
     {
       city: 'Bangkok',
       cityID: 1609348,
-      books: 'bangkok',
+      books: 'thailand',
       recipe: 'thai',
     },
     {

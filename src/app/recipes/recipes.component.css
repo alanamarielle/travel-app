@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .recipe-box-Detroit {
@@ -11,7 +12,7 @@
 }
 
 .recipe-box-Rome {
-  background-image: url("src/app/imageAssets/brick3.jpg");
+  background-image: url("src/app/imageAssets/Rome1.jpg");
 }
 
 .recipe-box-RiodeJaneiro {
@@ -27,7 +28,7 @@
 }
 
 .recipe-box-Bangkok {
-  background-image: url("src/app/imageAssets/brick5.jpeg");
+  background-image: url("src/app/imageAssets/bangkok.jpg");
 }
 
 .recipe-box-Tokyo {
@@ -58,13 +59,13 @@
 }
 
 .recipes-Detroit {
-  background-color: #031d44;
+  background-color: #031d44c7;
 }
 .recipes-Rome {
-  background-color: green;
+  background-color: #1e3f20;
 }
 .recipes-RiodeJaneiro {
-  background-color: blue;
+  background-color: #004537;
 }
 .recipes-Paris {
   background-color: pink;
@@ -73,19 +74,19 @@
   background-color: red;
 }
 .recipes-Bangkok {
-  background-color: yellow;
+  background-color: #563846;
 }
 .recipes-Tokyo {
-  background-color: orange;
+  background-color: #192340;
 }
 .recipes-NewDelhi {
-  background-color: #31e2d9;
+  background-color: #b61a1a;
 }
 .recipes-Madrid {
-  background-color: #35d169;
+  background-color: #d93b3b;
 }
 .recipes-AddisAbaba {
-  background-color: #e21aa6;
+  background-color: #cbcb67b0;
 }
 
 .recipe-container {
@@ -105,6 +106,7 @@
   width: 240px;
 }
 .recipeImg {
+  width: 240px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
