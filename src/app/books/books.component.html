@@ -4,11 +4,11 @@
       class="books-item"
       *ngFor="let cityBook of bookData?.items; index as i"
     >      <button
-    class="bk-button"
+    class="show-button"
     *ngIf="showIndex !== i"
     (click)="toggleDisplay(i)"
   >
-    Show Info
+    More Info
   </button>
       <img src="{{ cityBook?.volumeInfo.imageLinks.thumbnail }}" alt="" class="bookImg" />
       <div *ngIf="showIndex === i" class="book-info">
