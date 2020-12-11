@@ -21,7 +21,7 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  margin: 30px;
+  margin: 40px;
   max-width: 30%;
   position: relative;
 }
@@ -36,17 +36,23 @@
   width: 150px;
   height: 200px;
   position: absolute;
-  top: 0;
+  top: -120px;
   z-index: 10;
 }
 .title {
   font-size: 16px;
 }
-.bk-button {
+.show-button {
+  background-color: rgba(119, 119, 119, 0.644);
   border: none;
-  padding: 10px;
+  width: 80px;
+  /* height: 20px; */
+  padding: 8px;
   margin: 3px;
-  border-radius: 15px;
+  position: relative;
+  left: -80px;
+  top: -30px;
+transform: rotate(270deg);
 }
 
 .load-more {
@@ -67,5 +73,5 @@
 .bookImg {
   position: absolute;
   bottom: 0px;
-  box-shadow: 0px 0px 20px black;
+  box-shadow: 0px 6px 10px black;
 }
