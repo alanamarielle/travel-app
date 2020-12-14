@@ -1,12 +1,110 @@
-.recipeheader {
+.header-Detroit {
   color: #000000c9;
   font-family: "Sedgwick Ave Display", cursive;
   font-size: 130px;
 }
 
-.bottomHeader {
+.header-Rome {
+  color: #003f10;
+  font-family: "Zeyada", cursive;
+  text-shadow: 2px 8px black;
+  font-size: 130px;
+}
+
+.header-RiodeJaneiro {
+  color: #fdfffc;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 130px;
+}
+.header-Paris {
+  color: #000000;
+  font-family: "Kristi", cursive;
+  font-size: 130px;
+}
+.header-NewYorkCity {
+  color: #fdfffc;
+  font-family: "Playfair Display", serif;
+  font-size: 130px;
+}
+.header-Bangkok {
+  color: #000000;
+  font-family: "Dr Sugiyama", cursive;
+  font-size: 130px;
+}
+.header-Tokyo {
+  color: #000000;
+  font-family: "Caveat Brush", cursive;
+  font-size: 130px;
+}
+.header-NewDelhi {
+  color: #000000c9;
+  text-shadow: 4px 4px black;
+  font-family: "Mr Bedfort", cursive;
+  font-size: 130px;
+}
+.header-Madrid {
+  color: #000000c9;
+  font-family: "Sansita Swashed", cursive;
+  font-size: 130px;
+}
+.header-AddisAbaba {
+  color: #000000c9;
+  font-family: "Langar", cursive;
+  font-size: 130px;
+}
+
+.footer-Detroit {
   color: #000000c9;
   font-family: "Sedgwick Ave Display", cursive;
+  font-size: 130px;
+}
+
+.footer-Rome {
+  color: #003f10;
+  font-family: "Zeyada", cursive;
+  text-shadow: 2px 8px black;
+  font-size: 130px;
+}
+
+.footer-RiodeJaneiro {
+  color: #fdfffc;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 130px;
+}
+.footer-Paris {
+  color: #000000;
+  font-family: "Kristi", cursive;
+  font-size: 130px;
+}
+.footer-NewYorkCity {
+  color: #fdfffc;
+  font-family: "Playfair Display", serif;
+  font-size: 130px;
+}
+.footer-Bangkok {
+  color: #000000;
+  font-family: "Dr Sugiyama", cursive;
+  font-size: 130px;
+}
+.footer-Tokyo {
+  color: #000000;
+  font-family: "Caveat Brush", cursive;
+  font-size: 130px;
+}
+.footer-NewDelhi {
+  color: #00000073;
+  text-shadow: 4px 4px black;
+  font-family: "Mr Bedfort", cursive;
+  font-size: 130px;
+}
+.footer-Madrid {
+  color: #000000c9;
+  font-family: "Sansita Swashed", cursive;
+  font-size: 130px;
+}
+.footer-AddisAbaba {
+  color: #000000c9;
+  font-family: "Langar", cursive;
   font-size: 130px;
 }
 
@@ -24,7 +122,7 @@
 }
 
 .recipe-box-Rome {
-  background-image: url("src/app/imageAssets/Rome1.jpg");
+  background-image: url("src/app/imageAssets/Rome7.jpg");
 }
 
 .recipe-box-RiodeJaneiro {
@@ -81,7 +179,7 @@
   background-color: pink;
 }
 .recipes-NewYorkCity {
-  background-color: red;
+  background-color: #78394e;
 }
 .recipes-Bangkok {
   background-color: #563846;
@@ -133,8 +231,12 @@ a:visited {
 
 .load-more {
   border: none;
-  background-color: white;
-  font-size: ;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  border-radius: 2px;
+  height: 40px;
+  margin: 20px;
 }
 @media only screen and (min-width: 768px) {
   .recipes {

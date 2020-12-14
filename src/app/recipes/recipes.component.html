@@ -11,7 +11,21 @@
   [class.recipe-box-Madrid]="cityName === 'Madrid'"
   [class.recipe-box-AddisAbaba]="cityName === 'Addis Ababa'"
 >
-  <h1 class="recipeheader">Let your taste buds explore...</h1>
+  <h1
+    class="recipeheader"
+    [class.header-Detroit]="cityName === 'Detroit'"
+    [class.header-Rome]="cityName === 'Rome'"
+    [class.header-RiodeJaneiro]="cityName === 'Rio de Janeiro'"
+    [class.header-Paris]="cityName === 'Paris'"
+    [class.header-NewYorkCity]="cityName === 'New York City'"
+    [class.header-Bangkok]="cityName === 'Bangkok'"
+    [class.header-Tokyo]="cityName === 'Tokyo'"
+    [class.header-NewDelhi]="cityName === 'New Delhi'"
+    [class.header-Madrid]="cityName === 'Madrid'"
+    [class.header-AddisAbaba]="cityName === 'Addis Ababa'"
+  >
+    Let your taste buds explore...
+  </h1>
   <div
     class="recipes"
     [class.recipes-Detroit]="cityName === 'Detroit'"
@@ -36,8 +50,23 @@
         >Click to view recipe.<i class="fas fa-utensils"></i>
       </a>
     </div>
+    <button class="load-more" (click)="loadMore()">See more recipes</button>
   </div>
 
-  <button class="load-more" (click)="loadMore()">Load more recipes</button>
-  <h1 class="bottomHeader">Expand your mind...</h1>
+
+  <h1
+    class="bottomHeader"
+    [class.footer-Detroit]="cityName === 'Detroit'"
+    [class.footer-Rome]="cityName === 'Rome'"
+    [class.footer-RiodeJaneiro]="cityName === 'Rio de Janeiro'"
+    [class.footer-Paris]="cityName === 'Paris'"
+    [class.footer-NewYorkCity]="cityName === 'New York City'"
+    [class.footer-Bangkok]="cityName === 'Bangkok'"
+    [class.footer-Tokyo]="cityName === 'Tokyo'"
+    [class.footer-NewDelhi]="cityName === 'New Delhi'"
+    [class.footer-Madrid]="cityName === 'Madrid'"
+    [class.footer-AddisAbaba]="cityName === 'Addis Ababa'"
+  >
+    Expand your mind...
+  </h1>
 </div>
