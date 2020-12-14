@@ -1,0 +1,15 @@
+.page-not-found {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+.lost {
+  text-align: center;
+  padding: 20px 0px;
+  color: white;
+}
+.footer {
+  padding: 400px 0px;
+}
