@@ -19,7 +19,7 @@ export class BooksComponent implements OnInit {
     });
   }
   loadMore = () => {
-    this.service.getBooks(this.cityBook, '10').subscribe((response) => {
+    this.service.getBooks(this.cityBook, '12').subscribe((response) => {
       this.bookData = response;
       console.log(this.bookData);
     });

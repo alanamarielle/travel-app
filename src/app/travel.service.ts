@@ -57,6 +57,7 @@ export class TravelService {
         orderBy: 'relevance',
         langRestrict: 'en',
         startIndex: startIndex,
+        maxResults: '12',
       },
     });
   };
