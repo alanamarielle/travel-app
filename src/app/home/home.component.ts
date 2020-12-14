@@ -8,7 +8,11 @@ import { TravelService } from '../travel.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor(private route: Router, private service: TravelService) {}
+  constructor(
+    private route: Router,
+    private service: TravelService,
+    private router: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {}
 
