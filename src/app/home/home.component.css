@@ -42,3 +42,11 @@
 .container .btn:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+.attributions {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.icon {
+  width: 200px;
+}
