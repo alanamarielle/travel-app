@@ -2,6 +2,22 @@
   display: flex;
   flex-direction: column;
 }
+.header {
+  display: flex;
+  height: max-content;
+  justify-content: space-between;
+}
+.heading {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  padding: 0px 10px;
+}
+.fas {
+  color: white;
+  font-size: 3rem;
+  padding: 0px 10px;
+}
 .container {
   height: 200px;
   position: relative;
@@ -41,12 +57,4 @@
 
 .container .btn:hover {
   background-color: rgba(0, 0, 0, 0.5);
-}
-.attributions {
-  display: flex;
-  flex-direction: column;
-  color: white;
-}
-.icon {
-  width: 200px;
 }

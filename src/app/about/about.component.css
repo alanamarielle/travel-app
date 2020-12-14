@@ -1,0 +1,8 @@
+.attributions {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.icon {
+  width: 200px;
+}
