@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 90vw;
-  background-color: rgb(70, 44, 27);
+  background-color: #fdfffc;
 }
 .books-item {
   display: flex;
@@ -64,7 +64,7 @@
 .bookshelf {
   display: flex;
   justify-content: center;
-  background-color: rgb(53, 31, 16);
+  background-color: rgb(138, 138, 138);
   height: 10px;
   width: 90vw;
 }

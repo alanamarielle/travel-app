@@ -33,5 +33,4 @@ export class RecipesComponent implements OnInit {
       console.log(this.recipeData);
     });
   };
-
 }

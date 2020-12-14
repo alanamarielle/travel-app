@@ -1,3 +1,15 @@
+.recipeheader {
+  color: #000000c9;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 130px;
+}
+
+.bottomHeader {
+  color: #000000c9;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 130px;
+}
+
 .recipe-box {
   padding: 20px;
   height: max-content;
@@ -47,11 +59,9 @@
   background-image: url("src/app/imageAssets/ethiopianfabric.jpg");
 }
 
-.recipeheader {
-  color: #fdfffc;
-}
 .recipes {
   width: 90vw;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +69,7 @@
 }
 
 .recipes-Detroit {
-  background-color: #031d44c7;
+  background-color: #031d44;
 }
 .recipes-Rome {
   background-color: #1e3f20;
@@ -124,6 +134,7 @@ a:visited {
 .load-more {
   border: none;
   background-color: white;
+  font-size: ;
 }
 @media only screen and (min-width: 768px) {
   .recipes {
