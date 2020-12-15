@@ -1,6 +1,7 @@
-.team {
-  width: 480px;
-  height: 160px;
+.main {
+  display: block;
+  background-color: chartreuse;
+  height: 200px;
 }
 .attributions {
   display: flex;
