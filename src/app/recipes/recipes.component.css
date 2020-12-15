@@ -231,12 +231,12 @@ a:visited {
 
 .load-more {
   border: none;
-  background-color: transparent;
+  color: black;
+  background-color: white;
   font-size: 20px;
-  color: white;
-  border-radius: 2px;
+  border-radius: 5px;
   height: 40px;
-  margin: 20px;
+  margin: 5px;
 }
 @media only screen and (min-width: 768px) {
   .recipes {
