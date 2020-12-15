@@ -1,8 +1,80 @@
+.main {
+  background-color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.team {
+  width: 450px;
+  height: 200px;
+  background-image: url("src/app/imageAssets/team_elsewhere_sm.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.names {
+  font-size: 20px;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+}
+.about {
+  padding-top: 15px;
+  text-align: center;
+}
+.about p {
+  padding: 5px;
+}
+
+.homeButton {
+  padding: 2px;
+  display: flex;
+  border: none;
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.fas {
+  font-size: 30px;
+  margin-right: 5px;
+}
 .attributions {
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: white;
 }
 .icon {
+  margin: 5px;
+  border-radius: 5px;
   width: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+  .names {
+    width: 770px;
+  }
+  .team {
+    background-image: url("src/app/imageAssets/team_elsewhere_med.jpg");
+    width: 770px;
+    height: 300px;
+  }
+  .about p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .names {
+    width: 1200px;
+  }
+  .team {
+    background-image: url("src/app/imageAssets/team_elsewhere_full.jpg");
+    width: 1200px;
+    height: 400px;
+  }
+  .about p {
+    font-size: 24px;
+  }
 }

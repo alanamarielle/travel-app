@@ -13,6 +13,7 @@ import { BooksComponent } from './books/books.component';
 import { MusicComponent } from './music/music.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BookItemComponent } from './book-item/book-item.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     RecipesComponent,
     PageNotFoundComponent,
     AboutComponent,
+    BookItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, GalleriaModule],
   providers: [],
