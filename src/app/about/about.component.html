@@ -1,10 +1,52 @@
 <main class="main">
   <h1>About Us</h1>
-  <img class="team" src="team_elsewhere_full.jpg" alt="team pic" width="450" />
+  <div class="team"></div>
+  <div class="names">
+    <a
+      href="https://github.com/Kingram12"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Kayla Ingram</a
+    >
+    <a
+      href="https://github.com/alejandraroel"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Alejandra Roel</a
+    >
+    <a
+      href="http://github.com/alanamarielle"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Alana Frank</a
+    >
+  </div>
+  <div class="about">
+    <h2>About Elsewhere</h2>
+    <p>
+      People have been stuck at home for months now, all vacations canceled.
+      Because of that, opportunities for expanding one’s horizons and cultural
+      education have been scarce.
+    </p>
+    <p>
+      We created this app to provide an immersive experience of the sights and
+      sounds of somewhere else from the comfort and safety of your home.
+    </p>
+  </div>
+  <a [routerLink]="['/home']" class="homeButton">
+    <i class="fas fa-globe-americas"></i>
+    <h1>Take me elsewhere</h1>
+  </a>
 </main>
 <footer>
+  `
   <div class="attributions">
     This app is powered by
+    <img
+      class="icon"
+      src="https://angular.io/assets/images/logos/angular/angular.svg"
+      alt="Angular Logo"
+    />
     <div id="edamam-badge" data-color="white"></div>
     <img
       class="icon"
