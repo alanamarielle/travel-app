@@ -1,4 +1,7 @@
 .books-shelf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: antiquewhite;
   padding: 100px 0px;
 }
@@ -13,6 +16,13 @@
 .books-container-large {
   display: none;
 }
+.btn {
+  margin-bottom: 80px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+}
 @media only screen and (min-width: 768px) {
   .books-container-mobile {
     display: none;
@@ -20,6 +30,7 @@
   .books-container-medium {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .books-container-large {
@@ -36,6 +47,7 @@
   .books-container-large {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }

@@ -4,6 +4,7 @@
   align-items: center;
   width: 350px;
   position: relative;
+  margin: 10px;
 }
 .bookImg {
   width: 128px;
@@ -36,12 +37,10 @@
 }
 @media only screen and (min-width: 768px) {
   .book-item {
-    width: 280px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .book-item {
-    width: 350px;
   }
 }

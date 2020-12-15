@@ -6,6 +6,7 @@
   display: flex;
   height: max-content;
   justify-content: space-between;
+  padding: 5px;
 }
 .heading {
   font-size: 3rem;
