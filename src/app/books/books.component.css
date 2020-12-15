@@ -1,9 +1,62 @@
+.whiteshelf1 {
+  height: 30px;
+  width: 90vw;
+  background-color: white;
+  border: 0.5px solid black;
+  position: absolute;
+  top: 338px;
+}
+
+.whiteshelf2 {
+  height: 30px;
+  width: 90vw;
+  background-color: white;
+  border: 0.5px solid black;
+  position: absolute;
+  top: 596px;
+}
+
+.whiteshelf3 {
+  height: 30px;
+  width: 90vw;
+  background-color: white;
+  border: 0.5px solid black;
+  position: absolute;
+  top: 858px;
+}
+
+.whiteshelf4 {
+  height: 30px;
+  width: 90vw;
+  background-color: white;
+  border: 0.5px solid black;
+  position: absolute;
+  top: 1118px;
+}
+.whiteshelf5 {
+  height: 30px;
+  width: 90vw;
+  background-color: white;
+  border: 0.5px solid black;
+  position: absolute;
+  top: 1378px;
+}
+.whiteshelf6 {
+  height: 30px;
+  width: 90vw;
+  background-color: white;
+  border: 0.5px solid black;
+  position: absolute;
+  top:1638px;
+}
+
 .books-shelf {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: antiquewhite;
+  background-color: rgb(0, 0, 0);
   padding: 100px 0px;
+  position: relative;
 }
 .books-container-mobile {
   display: flex;
@@ -18,11 +71,19 @@
 }
 .btn {
   margin-bottom: 80px;
+  margin-top: 20px;
   width: 200px;
   padding: 5px;
   border-radius: 5px;
   background-color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  .whiteshelf1,.whiteshelf2, .whiteshelf3,.whiteshelf4,.whiteshelf5, .whiteshelf6 {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .books-container-mobile {
     display: none;
@@ -36,8 +97,10 @@
   .books-container-large {
     display: none;
   }
+
+
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1114px) {
   .books-container-mobile {
     display: none;
   }
@@ -49,5 +112,29 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .whiteshelf5,
+  .whiteshelf6 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .books-container-mobile {
+    display: none;
+  }
+  .books-container-medium {
+    display: none;
+  }
+  .books-container-large {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .whiteshelf4,
+  .whiteshelf5,
+  .whiteshelf6 {
+    display: none;
   }
 }

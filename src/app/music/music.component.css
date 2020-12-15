@@ -6,6 +6,7 @@
   bottom: 0;
   width: 100vw;
   background-color: black;
+  z-index: 5;
 }
 .welcome {
   padding: 2px;
