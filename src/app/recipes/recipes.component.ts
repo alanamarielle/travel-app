@@ -18,19 +18,16 @@ export class RecipesComponent implements OnInit {
   ngOnInit(): void {
     this.service.getRecipes(this.cityRecipe).subscribe((response) => {
       this.recipeData = response;
-      console.log(this.recipeData);
     });
 
     this.route.queryParamMap.subscribe((response) => {
       this.cityName = response.get('city');
     });
-    console.log(this.cityName);
   }
 
   loadMore = () => {
     this.service.getRecipes(this.cityRecipe, '10').subscribe((response) => {
       this.recipeData = response;
-      console.log(this.recipeData);
     });
   };
 }
