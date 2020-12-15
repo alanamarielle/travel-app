@@ -16,10 +16,14 @@
   background-position: center;
 }
 .names {
-  font-size: 24px;
+  font-size: 20px;
   width: 450px;
   display: flex;
   justify-content: space-around;
+}
+.fa-github {
+  color: black;
+  padding: 5px;
 }
 .about {
   padding-top: 15px;
@@ -45,7 +49,6 @@
 
 .fas {
   font-size: 30px;
-  margin-right: 5px;
 }
 .attributions {
   display: flex;
@@ -110,6 +113,6 @@
     font-size: 36px;
   }
   .powered {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
