@@ -1,131 +1,20 @@
-<div class="books-container-mobile">
-  <div *ngFor="let cityBook of bookData?.items; index as i">
-    <button
-      class="show-button"
-      *ngIf="showIndex !== i"
-      (click)="toggleDisplay(i)"
-    >
-      More Info
-    </button>
-    <img
-      src="{{ cityBook?.volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-    <div *ngIf="showIndex === i" class="book-info">
-      <p class="title">{{ cityBook?.volumeInfo.title }}</p>
-      by {{ cityBook?.volumeInfo.authors }} <br />
-      Description: {{ cityBook?.volumeInfo.description }}
-      <button class="bk-button" (click)="toggleDisplay(i)">Hide Info</button>
-    </div>
+<div class="books-shelf">
+  <div class="books-container-mobile">
+    <app-book-item
+      *ngFor="let cityBook of bookData?.items"
+      [cityBook]="cityBook"
+    ></app-book-item>
+  </div>
+  <div class="books-container-medium">
+    <app-book-item
+      *ngFor="let cityBook of bookData?.items"
+      [cityBook]="cityBook"
+    ></app-book-item>
+  </div>
+  <div class="books-container-large">
+    <app-book-item
+      *ngFor="let cityBook of bookData?.items"
+      [cityBook]="cityBook"
+    ></app-book-item>
   </div>
 </div>
-<div class="books-container-medium">
-  <div class="row-1" *ngFor="">
-    <img
-      src="{{ bookData.items[0].volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-    <img
-      src="{{ bookData.items[1].volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-  </div>
-  <div class="row-2">
-    <img
-      src="{{ bookData.items[2].volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-    <img
-      src="{{ bookData.items[3].volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-  </div>
-  <div class="row-3">
-    <img
-      src="{{ bookData.items[4].volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-    <img
-      src="{{ bookData.items[5].volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-  </div>
-  <div class="row-4">
-    <img
-      src="{{ bookData.items[6].volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-    <img
-      src="{{ bookData.items[7].volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-  </div>
-  <div class="row-5">
-    <img
-      src="{{ bookData.items[8].volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-    <img
-      src="{{ bookData.items[9].volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-  </div>
-  <div class="row-6">
-    <img
-      src="{{ bookData.items[10].volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-    <img
-      src="{{ bookData.items[11].volumeInfo.imageLinks.thumbnail }}"
-      alt=""
-      class="bookImg"
-    />
-  </div>
-</div>
-
-<!-- <div class="books-box">
-  <div class="books">
-    <div
-      class="books-item"
-      *ngFor="let cityBook of bookData?.items; index as i"
-    >
-      <button
-        class="show-button"
-        *ngIf="showIndex !== i"
-        (click)="toggleDisplay(i)"
-      >
-        More Info
-      </button>
-      <img
-        src="{{ cityBook?.volumeInfo.imageLinks.thumbnail }}"
-        alt=""
-        class="bookImg"
-      />
-      <div *ngIf="showIndex === i" class="book-info">
-        <p class="title">{{ cityBook?.volumeInfo.title }}</p>
-        by {{ cityBook?.volumeInfo.authors }} <br />
-        Description: {{ cityBook?.volumeInfo.description }}
-        <button class="bk-button" (click)="toggleDisplay(i)">Hide Info</button>
-      </div>
-    </div>
-
-    <div class="shelf">
-      <div class="bookend_left"></div>
-      <div class="bookend_right"></div>
-      <div class="reflection"></div>
-    </div>
-  </div>
-  <button class="load-more" (click)="loadMore()">Load More Books</button>
-</div> -->

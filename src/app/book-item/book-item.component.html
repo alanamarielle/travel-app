@@ -1,0 +1,18 @@
+<div class="book-item">
+  <img
+    src="{{ cityBook?.volumeInfo.imageLinks.thumbnail }}"
+    alt=""
+    class="bookImg"
+  />
+  <div *ngIf="!showInfo" class="book-info">
+    <p class="title">{{ cityBook?.volumeInfo.title }}</p>
+    by {{ cityBook?.volumeInfo.authors }} <br />
+    Description: {{ cityBook?.volumeInfo.description }}
+  </div>
+  <button *ngIf="!showInfo" class="bk-button" (click)="showInfo = !showInfo">
+    Hide Info
+  </button>
+  <button class="show-button" *ngIf="showInfo" (click)="showInfo = !showInfo">
+    More Info
+  </button>
+</div>
