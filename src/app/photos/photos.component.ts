@@ -31,5 +31,6 @@ export class PhotosComponent implements OnInit {
       this.photoData = response;
       console.log(this.photoData);
     });
+    console.log(this.cityRef);
   }
 }

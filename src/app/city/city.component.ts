@@ -63,7 +63,7 @@ export class CityComponent implements OnInit {
       recipe: 'spanish',
     },
     {
-      city: 'Addis Ababa',
+      city: 'Ethiopia',
       cityID: 344979,
       books: 'ethiopia',
       recipe: 'ethiopian',
