@@ -8,7 +8,9 @@
     <p class="title">{{ cityBook?.volumeInfo.title }}</p>
     by {{ cityBook?.volumeInfo.authors }} <br />
     Description: {{ cityBook?.volumeInfo.description }}
-    <a href="{{ cityBook?.volumeInfo.infoLink }}">Link to Buy</a>
+    <a href="{{ cityBook?.volumeInfo.infoLink }}" target="_blank"
+      >Link to Buy</a
+    >
   </div>
   <button *ngIf="!showInfo" class="bk-button" (click)="showInfo = !showInfo">
     Hide Info

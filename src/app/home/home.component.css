@@ -59,3 +59,18 @@
 .container .btn:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+@media only screen and (max-width: 768px) {
+  .heading2 {
+    margin-top: 20px;
+  }
+
+  .header {
+    display: flex;
+    height: max-content;
+    justify-content: space-between;
+    padding: 5px;
+    flex-direction: column;
+    margin: 5px;
+  }
+}
