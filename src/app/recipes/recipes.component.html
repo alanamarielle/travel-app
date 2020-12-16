@@ -49,6 +49,7 @@
       <a href="{{ cityRecipe?.recipe.url }}" target="_blank"
         >Click to view recipe.<i class="fas fa-utensils"></i>
       </a>
+      <a href="mailto:?subject=Check out this recipe&body=Here's this recipe{{cityRecipe?.recipe.url}}">Email this recipe!</a>
     </div>
   </div>
   <button class="load-more" (click)="loadMore()">Load more recipes</button>
