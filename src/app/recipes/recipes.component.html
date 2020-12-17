@@ -58,7 +58,11 @@
       <a href=""></a>
     </div>
   </div>
-  <button class="load-more" (click)="loadMore()">Load more recipes</button>
+  <div class="button-container">
+    <button class="load-more" (click)="getRecipe()">First Page</button>
+    <button class="load-more" (click)="loadMore()">Second Page</button>
+    <button class="load-more" (click)="pageThree()">Third Page</button>
+  </div>
   <h1
     class="bottomHeader"
     [class.footer-Detroit]="cityName === 'Detroit'"

@@ -4,7 +4,6 @@
       *ngFor="let cityBook of bookData?.items"
       [cityBook]="cityBook"
     ></app-book-item>
-
   </div>
   <div class="books-container-medium">
     <app-book-item
@@ -18,7 +17,11 @@
       [cityBook]="cityBook"
     ></app-book-item>
   </div>
-  <button class="btn" (click)="loadMore()">Load more books</button>
+  <div class="book-buttons">
+    <button class="btn" (click)="getBooks()">First Page</button>
+    <button class="btn" (click)="loadMore()">Second Page</button>
+    <button class="btn" (click)="pageThree()">Third Page</button>
+  </div>
   <div class="whiteshelf1"></div>
   <div class="whiteshelf2"></div>
   <div class="whiteshelf3"></div>
