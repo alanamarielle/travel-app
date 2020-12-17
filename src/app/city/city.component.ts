@@ -35,7 +35,7 @@ export class CityComponent implements OnInit {
     {
       city: 'New York City',
       cityID: 5128581,
-      books: 'new_york_city',
+      books: 'new york city',
       recipe: 'nyc',
     },
     {

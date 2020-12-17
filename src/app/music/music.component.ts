@@ -45,7 +45,7 @@ export class MusicComponent implements OnInit {
       } else if (this.city === 'Tokyo') {
         document.getElementById(
           'music'
-        ).innerHTML = `<iframe src="https://open.spotify.com/embed/album/53A8esSW3J4nfbZRXIFE4g" width="300" height="75" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+        ).innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/5q6ztbyqMoAEx9AaR1Y442" width="300" height="75" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
       } else if (this.city === 'New Delhi') {
         document.getElementById(
           'music'
